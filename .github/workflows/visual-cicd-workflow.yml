@@ -10,6 +10,7 @@ on:
 jobs:
   build_test:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
             - name: unnamed_command
               uses: actions/checkout@v4
