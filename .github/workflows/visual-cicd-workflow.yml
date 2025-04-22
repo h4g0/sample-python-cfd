@@ -13,13 +13,11 @@ jobs:
     steps:
             - name: unnamed_command
               uses: actions/checkout@v4
-            - name: Setup Python
-              uses: actions/setup-python@v4
+            - name:  Set up Node.js
+              uses: actions/setup-node@v3
               with:
-                         python-version: '3.9'
-            - name: Install dependencies
-              run: pip install -r requirements.txt
-            - name: Check Python version
+                        node-version: '20'
+            - name: Check Node.js and npm versions
               run: |
-                python --version
-                python -c "import sys; print(f'Full version: {sys.version}')"
+                node --version
+                npm --version
