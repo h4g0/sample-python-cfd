@@ -1,8 +1,8 @@
 # Generated CI/CD Pipeline YAML
 # This YAML is compatible with GitHub Actions
 
-# Pipeline: tutorial_pipeline3
-name: tutorial_pipeline3
+# Pipeline: tutorial3
+name: tutorial3
 
 on:
   workflow_dispatch:
