@@ -12,6 +12,8 @@ jobs:
   build_test:
     runs-on: ubuntu-latest
     steps:
+            - name: unnamed_command
+              uses: actions/checkout@v4
             - name: Setup Python
               uses: actions/setup-python@v4
               with:
@@ -31,3 +33,4 @@ jobs:
                         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
                         heroku_app_name: "your-app-name-here"
     needs: ["build_test"]
+
