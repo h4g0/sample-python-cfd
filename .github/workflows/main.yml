@@ -24,6 +24,7 @@ jobs:
               run: pytest || true
   deploy:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
             - name: unnamed_command
               uses: actions/checkout@v4
@@ -33,4 +34,3 @@ jobs:
                         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
                         heroku_app_name: "your-app-name-here"
     needs: ["build_test"]
-
