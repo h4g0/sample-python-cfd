@@ -19,7 +19,7 @@ jobs:
               with:
                         node-version: '18'
             - name: Install dependenciesencies
-              uses: actions/setup-node@v3       with:
+              uses: actions/setup-node@v3
               with:
                         node-version: '18'
             - name: Install dependencies
