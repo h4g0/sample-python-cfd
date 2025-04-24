@@ -1,0 +1,17 @@
+# Generated CI/CD Pipeline YAML
+# This YAML is compatible with GitHub Actions
+
+# Pipeline: default_pipeline
+name: default_pipeline3
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    # Build and test the application
+    runs-on: node
+    steps:
+            - name: setup
+              run: npm install          install --ci
